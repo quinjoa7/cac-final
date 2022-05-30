@@ -1,6 +1,6 @@
 import React from 'react'
 import { API } from '../apiConfig'
-import Banner from '../components/banner/Banner'
+import Banner from '../components/Banner/Banner'
 import Carousel from '../components/Carousel/Carousel'
 import Header from '../components/Header/Header';
 import Separator from '../components/Separator/Separator';
