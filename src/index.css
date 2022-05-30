@@ -1,23 +1,9 @@
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body {
-  background-color: #161616;
-}
-
-.slick-list {
-  padding: 100px 0;
-  margin: -100px 0;
-}
-
-.slick-prev {
-  left: 1% !important;
-  z-index: 1;
-}
-.slick-next {
-  right: 1% !important;
-  z-index: 1;
+:root {
+    background-color: black;
 }

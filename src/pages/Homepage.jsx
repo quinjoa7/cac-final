@@ -1,29 +1,34 @@
-import React from "react";
-import { apiEntity } from "../apiConfig";
-import Banner from "../components/Banner/Banner";
-import Carousel from "../components/Carousel/Carousel";
-import Separator from "../components/Separator/Separator";
+import React from 'react'
+import { API } from '../apiConfig'
+import Banner from '../components/banner/Banner'
+import Carousel from '../components/Carousel/Carousel'
+import Header from '../components/Header/Header';
+import Separator from '../components/Separator/Separator';
 
 const Homepage = () => {
-  return (
-    <>
-      <Banner />
-      <Separator height={"40px"} />
-      <Carousel
-        entity={apiEntity.popularMovies}
-        title={"Peliculas populares"}
-      />
-      <Separator height={"40px"} />
-      <Carousel
-        entity={apiEntity.topRatedMovies}
-        title="Peliculas mejor puntuadas"
-      />
-      <Separator height={"40px"} />
-      <Carousel entity={apiEntity.popularTv} title="Series populares" />
-      <Separator height={"40px"} />
-      <Carousel entity={apiEntity.topRatedTv} title="Series mejor puntuadas" />
-    </>
-  );
-};
+    return (
+        <>
+            <Header />
+            <Separator height={"50px"} />
+            <Banner />
+            <Carousel 
+                entity={API.entity.popularMovies}
+                title={'Popular Movies'}
+            />
+            <Carousel 
+                entity={API.entity.topRatedMovies}
+                title={'Top Rated Movies'}
+            />
+            <Carousel 
+                entity={API.entity.popularTv}
+                title={'Popular Series'}
+            />
+            <Carousel 
+                entity={API.entity.topRatedTv}
+                title={'Top Rated Series'}
+            />
+        </>
+    )
+}
 
-export default Homepage;
+export default Homepage

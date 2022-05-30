@@ -1,31 +1,37 @@
 .card {
-  background-color: rgb(54, 54, 54);
-  margin: 0.2em;
-  height: 150px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+    background-color: rgb(0, 0, 0);
+    margin: 0.2em;
+    height: 175px;
+    background-size: cover;
+    background-position: center;
 }
 
 .card:hover {
-  transform: scale(1.5);
+    transform: scale(1.2);
+}
+
+#card_gradient {
+    height: 100%;
+    display: grid;
+    justify-content: center;
+}
+
+#card_gradient:hover {
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 1) 0%,
+            rgba(0, 0, 0, 0) 100%);
+}
+
+#card_gradient:hover > .card_title {
+    opacity: 1;
 }
 
 .card_title {
-  transition: 0.3s;
-  opacity: 0;
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #fff;
-  margin-bottom: 1rem;
-  height: 100%;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(0, 0, 0, 0) 100%
-  );
-}
-
-.card_title:hover {
-  opacity: 1;
+    opacity: 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 1rem;
+    height: 100%;
+    width: 100%;
 }

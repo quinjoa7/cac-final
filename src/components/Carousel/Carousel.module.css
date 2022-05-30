@@ -1,0 +1,12 @@
+#carousel_container {
+    margin-left: 40px;
+}
+
+#carousel_title {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}

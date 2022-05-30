@@ -1,0 +1,41 @@
+#header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  padding: 20px;
+  height: 50px;
+  background: linear-gradient(black, rgb(20, 20, 20));
+}
+
+#user {
+  align-self: center;
+  margin-left: auto;
+  height: 40px;
+}
+
+#logo {
+  position: relative;
+  top: -10px;
+  height: 30px;
+  margin-left: 15px;
+}
+
+#header_menu {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-left: 2em;
+}
+
+.header_item {
+  color: rgb(155, 155, 155);
+  margin-left: 1.4em;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: ease-in-out 100ms;
+}
+
+.header_item:hover {
+  color: white;
+}
